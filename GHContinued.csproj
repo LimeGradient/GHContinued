@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <LangVersion>7.3</LangVersion>
+    <ProjectGuid>{41D2BDD7-E52C-4470-AC81-5F4B496CC559}</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{41D2BDD7-E52C-4470-AC81-5F4B496CC559}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GHContinued</RootNamespace>
+    <AssemblyName>GHContinued</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="src/*.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <None Include="modinfo.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\Accessibility.dll</HintPath></Reference><Reference Include="AmplifyBloom.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\AmplifyBloom.dll</HintPath></Reference><Reference Include="AmplifyColor.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\AmplifyColor.dll</HintPath></Reference><Reference Include="AmplifyMotion.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\AmplifyMotion.dll</HintPath></Reference><Reference Include="Assembly-CSharp-firstpass.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\Assembly-CSharp-firstpass.dll</HintPath></Reference><Reference Include="Assembly-CSharp.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\Assembly-CSharp.dll</HintPath></Reference><Reference Include="AsusAuraWrapper.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\AsusAuraWrapper.dll</HintPath></Reference><Reference Include="AuraLayerManager.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\AuraLayerManager.dll</HintPath></Reference><Reference Include="com.rlabrecque.steamworks.net.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\com.rlabrecque.steamworks.net.dll</HintPath></Reference><Reference Include="CursorControl.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\CursorControl.dll</HintPath></Reference><Reference Include="CustomMarshalers.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\CustomMarshalers.dll</HintPath></Reference><Reference Include="DOTween.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\DOTween.dll</HintPath></Reference><Reference Include="EasyRagdollCreatorLib.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\EasyRagdollCreatorLib.dll</HintPath></Reference><Reference Include="Interop.AsRogAuraServiceLib.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\Interop.AsRogAuraServiceLib.dll</HintPath></Reference><Reference Include="Interop.AuraServiceLib.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\Interop.AuraServiceLib.dll</HintPath></Reference><Reference Include="Mono.Posix.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\Mono.Posix.dll</HintPath></Reference><Reference Include="Mono.Security.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\Mono.Security.dll</HintPath></Reference><Reference Include="Mono.WebBrowser.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\Mono.WebBrowser.dll</HintPath></Reference><Reference Include="mscorlib.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\mscorlib.dll</HintPath></Reference><Reference Include="Purchasing.Common.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\Purchasing.Common.dll</HintPath></Reference><Reference Include="System.Configuration.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\System.Configuration.dll</HintPath></Reference><Reference Include="System.Core.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\System.Core.dll</HintPath></Reference><Reference Include="System.Data.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\System.Data.dll</HintPath></Reference><Reference Include="System.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\System.dll</HintPath></Reference><Reference Include="System.Drawing.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\System.Drawing.dll</HintPath></Reference><Reference Include="System.EnterpriseServices.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\System.EnterpriseServices.dll</HintPath></Reference><Reference Include="System.Numerics.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\System.Numerics.dll</HintPath></Reference><Reference Include="System.Runtime.Serialization.Formatters.Soap.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\System.Runtime.Serialization.Formatters.Soap.dll</HintPath></Reference><Reference Include="System.Security.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\System.Security.dll</HintPath></Reference><Reference Include="System.Transactions.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\System.Transactions.dll</HintPath></Reference><Reference Include="System.Windows.Forms.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\System.Windows.Forms.dll</HintPath></Reference><Reference Include="System.Xml.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\System.Xml.dll</HintPath></Reference><Reference Include="Unity.Analytics.DataPrivacy.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\Unity.Analytics.DataPrivacy.dll</HintPath></Reference><Reference Include="Unity.MemoryProfiler.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\Unity.MemoryProfiler.dll</HintPath></Reference><Reference Include="Unity.Postprocessing.Runtime.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\Unity.Postprocessing.Runtime.dll</HintPath></Reference><Reference Include="Unity.ProBuilder.Csg.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\Unity.ProBuilder.Csg.dll</HintPath></Reference><Reference Include="Unity.ProBuilder.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\Unity.ProBuilder.dll</HintPath></Reference><Reference Include="Unity.ProBuilder.KdTree.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\Unity.ProBuilder.KdTree.dll</HintPath></Reference><Reference Include="Unity.ProBuilder.Poly2Tri.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\Unity.ProBuilder.Poly2Tri.dll</HintPath></Reference><Reference Include="Unity.ProBuilder.Stl.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\Unity.ProBuilder.Stl.dll</HintPath></Reference><Reference Include="Unity.TextMeshPro.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\Unity.TextMeshPro.dll</HintPath></Reference><Reference Include="Unity.Timeline.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\Unity.Timeline.dll</HintPath></Reference><Reference Include="UnityEngine.AccessibilityModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.AccessibilityModule.dll</HintPath></Reference><Reference Include="UnityEngine.AIModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.AIModule.dll</HintPath></Reference><Reference Include="UnityEngine.AndroidJNIModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.AndroidJNIModule.dll</HintPath></Reference><Reference Include="UnityEngine.AnimationModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.AnimationModule.dll</HintPath></Reference><Reference Include="UnityEngine.ARModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.ARModule.dll</HintPath></Reference><Reference Include="UnityEngine.AssetBundleModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.AssetBundleModule.dll</HintPath></Reference><Reference Include="UnityEngine.AudioModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.AudioModule.dll</HintPath></Reference><Reference Include="UnityEngine.ClothModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.ClothModule.dll</HintPath></Reference><Reference Include="UnityEngine.ClusterInputModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.ClusterInputModule.dll</HintPath></Reference><Reference Include="UnityEngine.ClusterRendererModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.ClusterRendererModule.dll</HintPath></Reference><Reference Include="UnityEngine.CoreModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.CoreModule.dll</HintPath></Reference><Reference Include="UnityEngine.CrashReportingModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.CrashReportingModule.dll</HintPath></Reference><Reference Include="UnityEngine.DirectorModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.DirectorModule.dll</HintPath></Reference><Reference Include="UnityEngine.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.dll</HintPath></Reference><Reference Include="UnityEngine.DSPGraphModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.DSPGraphModule.dll</HintPath></Reference><Reference Include="UnityEngine.GameCenterModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.GameCenterModule.dll</HintPath></Reference><Reference Include="UnityEngine.GIModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.GIModule.dll</HintPath></Reference><Reference Include="UnityEngine.GridModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.GridModule.dll</HintPath></Reference><Reference Include="UnityEngine.HotReloadModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.HotReloadModule.dll</HintPath></Reference><Reference Include="UnityEngine.ImageConversionModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.ImageConversionModule.dll</HintPath></Reference><Reference Include="UnityEngine.IMGUIModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.IMGUIModule.dll</HintPath></Reference><Reference Include="UnityEngine.InputLegacyModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.InputLegacyModule.dll</HintPath></Reference><Reference Include="UnityEngine.InputModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.InputModule.dll</HintPath></Reference><Reference Include="UnityEngine.JSONSerializeModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.JSONSerializeModule.dll</HintPath></Reference><Reference Include="UnityEngine.LocalizationModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.LocalizationModule.dll</HintPath></Reference><Reference Include="UnityEngine.NVIDIAModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.NVIDIAModule.dll</HintPath></Reference><Reference Include="UnityEngine.ParticleSystemModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.ParticleSystemModule.dll</HintPath></Reference><Reference Include="UnityEngine.PerformanceReportingModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.PerformanceReportingModule.dll</HintPath></Reference><Reference Include="UnityEngine.Physics2DModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.Physics2DModule.dll</HintPath></Reference><Reference Include="UnityEngine.PhysicsModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.PhysicsModule.dll</HintPath></Reference><Reference Include="UnityEngine.ProfilerModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.ProfilerModule.dll</HintPath></Reference><Reference Include="UnityEngine.Purchasing.AppleCore.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.Purchasing.AppleCore.dll</HintPath></Reference><Reference Include="UnityEngine.Purchasing.AppleMacosStub.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.Purchasing.AppleMacosStub.dll</HintPath></Reference><Reference Include="UnityEngine.Purchasing.AppleStub.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.Purchasing.AppleStub.dll</HintPath></Reference><Reference Include="UnityEngine.Purchasing.Codeless.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.Purchasing.Codeless.dll</HintPath></Reference><Reference Include="UnityEngine.Purchasing.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.Purchasing.dll</HintPath></Reference><Reference Include="UnityEngine.Purchasing.SecurityCore.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.Purchasing.SecurityCore.dll</HintPath></Reference><Reference Include="UnityEngine.Purchasing.SecurityStub.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.Purchasing.SecurityStub.dll</HintPath></Reference><Reference Include="UnityEngine.Purchasing.Stores.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.Purchasing.Stores.dll</HintPath></Reference><Reference Include="UnityEngine.Purchasing.WinRTCore.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.Purchasing.WinRTCore.dll</HintPath></Reference><Reference Include="UnityEngine.Purchasing.WinRTStub.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.Purchasing.WinRTStub.dll</HintPath></Reference><Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath></Reference><Reference Include="UnityEngine.ScreenCaptureModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.ScreenCaptureModule.dll</HintPath></Reference><Reference Include="UnityEngine.SharedInternalsModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.SharedInternalsModule.dll</HintPath></Reference><Reference Include="UnityEngine.SpriteMaskModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.SpriteMaskModule.dll</HintPath></Reference><Reference Include="UnityEngine.SpriteShapeModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.SpriteShapeModule.dll</HintPath></Reference><Reference Include="UnityEngine.StreamingModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.StreamingModule.dll</HintPath></Reference><Reference Include="UnityEngine.SubstanceModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.SubstanceModule.dll</HintPath></Reference><Reference Include="UnityEngine.SubsystemsModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.SubsystemsModule.dll</HintPath></Reference><Reference Include="UnityEngine.TerrainModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.TerrainModule.dll</HintPath></Reference><Reference Include="UnityEngine.TerrainPhysicsModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.TerrainPhysicsModule.dll</HintPath></Reference><Reference Include="UnityEngine.TextCoreFontEngineModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.TextCoreFontEngineModule.dll</HintPath></Reference><Reference Include="UnityEngine.TextCoreTextEngineModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.TextCoreTextEngineModule.dll</HintPath></Reference><Reference Include="UnityEngine.TextRenderingModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.TextRenderingModule.dll</HintPath></Reference><Reference Include="UnityEngine.TilemapModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.TilemapModule.dll</HintPath></Reference><Reference Include="UnityEngine.TLSModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.TLSModule.dll</HintPath></Reference><Reference Include="UnityEngine.UI.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.UI.dll</HintPath></Reference><Reference Include="UnityEngine.UIElementsModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.UIElementsModule.dll</HintPath></Reference><Reference Include="UnityEngine.UIElementsNativeModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.UIElementsNativeModule.dll</HintPath></Reference><Reference Include="UnityEngine.UIModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.UIModule.dll</HintPath></Reference><Reference Include="UnityEngine.UmbraModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.UmbraModule.dll</HintPath></Reference><Reference Include="UnityEngine.UNETModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.UNETModule.dll</HintPath></Reference><Reference Include="UnityEngine.UnityAnalyticsModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.UnityAnalyticsModule.dll</HintPath></Reference><Reference Include="UnityEngine.UnityConnectModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.UnityConnectModule.dll</HintPath></Reference><Reference Include="UnityEngine.UnityCurlModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.UnityCurlModule.dll</HintPath></Reference><Reference Include="UnityEngine.UnityTestProtocolModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.UnityTestProtocolModule.dll</HintPath></Reference><Reference Include="UnityEngine.UnityWebRequestAssetBundleModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath></Reference><Reference Include="UnityEngine.UnityWebRequestAudioModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.UnityWebRequestAudioModule.dll</HintPath></Reference><Reference Include="UnityEngine.UnityWebRequestModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.UnityWebRequestModule.dll</HintPath></Reference><Reference Include="UnityEngine.UnityWebRequestTextureModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.UnityWebRequestTextureModule.dll</HintPath></Reference><Reference Include="UnityEngine.UnityWebRequestWWWModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.UnityWebRequestWWWModule.dll</HintPath></Reference><Reference Include="UnityEngine.VehiclesModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.VehiclesModule.dll</HintPath></Reference><Reference Include="UnityEngine.VFXModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.VFXModule.dll</HintPath></Reference><Reference Include="UnityEngine.VideoModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.VideoModule.dll</HintPath></Reference><Reference Include="UnityEngine.VirtualTexturingModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.VirtualTexturingModule.dll</HintPath></Reference><Reference Include="UnityEngine.VRModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.VRModule.dll</HintPath></Reference><Reference Include="UnityEngine.WindModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.WindModule.dll</HintPath></Reference><Reference Include="UnityEngine.XRModule.dll">
+<HintPath>D:\SteamLibrary\steamapps\common\Green Hell\GH_Data/Managed\UnityEngine.XRModule.dll</HintPath></Reference><Reference Include="0Harmony.dll">
+<HintPath>C:\Users\Kevin Burns\AppData\Roaming\GreenHellModLoader\binaries\0Harmony.dll</HintPath></Reference><Reference Include="coremod.dll">
+<HintPath>C:\Users\Kevin Burns\AppData\Roaming\GreenHellModLoader\binaries\coremod.dll</HintPath></Reference><Reference Include="HMLCoreLibrary.dll">
+<HintPath>C:\Users\Kevin Burns\AppData\Roaming\GreenHellModLoader\binaries\HMLCoreLibrary.dll</HintPath></Reference><Reference Include="SharpZipLib.dll">
+<HintPath>C:\Users\Kevin Burns\AppData\Roaming\GreenHellModLoader\binaries\SharpZipLib.dll</HintPath></Reference><Reference Include="System.ValueTuple.dll">
+<HintPath>C:\Users\Kevin Burns\AppData\Roaming\GreenHellModLoader\binaries\System.ValueTuple.dll</HintPath></Reference>
+  </ItemGroup>
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>call cd $(SolutionDir)
+call build.bat
+echo 🔰 =============== 🔰 MOD BUILD SCRIPT 🔰 =============== 🔰
+echo ✔️ Mod successfully built as $(SolutionDir)$(ProjectName).rmod ✔️
+echo ===========================================================
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
